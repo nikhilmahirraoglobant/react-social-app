@@ -1,0 +1,6 @@
+[
+  {"id": 1, "name": "Anup", "photo": "images/anup.jpg"},
+  {"id": 2, "name": "Pratik", "photo": "images/pratik.jpg"},
+  {"id": 3, "name": "Rahul", "photo": "images/rahul.jpg"},
+  {"id": 4, "name": "Dipak", "photo": "images/dipak.jpg"}
+]

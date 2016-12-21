@@ -1,0 +1,31 @@
+{
+  "messages" : {
+    "Pratik":
+      [
+        {"id": 1, "from": "Pratik", "text": "Hi, How are you?"},
+        {"id": 2, "from": "Me", "text": "Hey Pratik"},
+        {"id": 3, "from": "Pratik", "text": "Where are you now?"}
+      ],
+
+      "Anup":
+        [
+          {"id": 1, "from": "Anup", "text": "Congratulation Bro for job appointment"},
+          {"id": 2, "from": "Me", "text": "Thanks Dude. Let's plan and catch up at your palce some time."},
+          {"id": 3, "from": "Anup", "text": "Ya Sure buddy."}
+        ],
+
+        "Rahul":
+        [
+          {"id": 1, "from": "Rahul", "text": "Hey buddy..we are planning for Leh-Ladakh trip. Will you join?"},
+          {"id": 2, "from": "Me", "text": "Hey Rahul. Will surely join. Let's discuss the plan "},
+          {"id": 3, "from": "Rahul", "text": "Ya Sure. We will meet some where and make the plan."}         
+        ],
+
+        "Dipak":
+        [
+          {"id": 1, "from": "Dipak", "text": "Hi Nikhil..I am coming to Pune this saturday for my friends wedding"},
+          {"id": 2, "from": "Me", "text": "That's great. If you are free from the weddings let us meet"},
+          {"id": 3, "from": "Dipak", "text": "Ya Sure. I will let you know.."}
+        ]
+  }
+}
