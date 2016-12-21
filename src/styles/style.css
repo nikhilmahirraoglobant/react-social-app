@@ -1,3 +1,6 @@
+textarea{
+  width: 100%;
+}
 .header{
   background: #3b5998;
   padding : 10px;
@@ -51,6 +54,17 @@
   text-align: right;
   border-radius: 5px;
   padding: 5px;
+  float: right;
+}
+.bg-light-gray:after, {
+  clear: both;
+  content: '';
+  display: table;
+}
+.messages-list div:after{
+  clear: both;
+  content: '';
+  display: table;
 }
 
 .bg-gray{
@@ -59,12 +73,14 @@
   color: white;
   border-radius: 5px;
   padding: 5px;
+  float: left;
 }
 
 .posts-container{
   margin-bottom: 20px;
   box-shadow: 3px 3px 4px #000;
   background: #dfe3ee;
+  padding: 15px;
 }
 
 .friends-messages-container{
@@ -74,7 +90,14 @@
   background : white;
   padding : 10px;
 }
-
+.friends-messages-container::after{
+  clear: both;
+  content: '';
+  display: table;
+}
+.friends-messages-container .btn{
+  float: right;
+}
 .message-sender-friend-name{
   color: rgba(0, 0, 255, 0.57);
   font-weight: bold;
@@ -87,32 +110,36 @@
 }
 
 .post-image{
-  width:500px;
-  height:200px;
-  margin-left: 10px;
-  margin-top: 10px;  
+  width:100%;
 }
 
 .post-title{
-  font-size : 20px;
-  margin-left: 10px;
+  font-size : 16px;
+  margin-bottom: 10px;
 }
 
 .post-link{
   font-size : 15px;
-  margin-left: 10px;
-  margin-top: 10px;  
 }
 
 
 
 .post-sender{
   font-weight: bold;
-  font-size : 20px;
+  font-size : 18px;
 }
 
 .user-post{
   margin-bottom: 20px;
+}
+
+.user-post .btn{
+  float: right;
+}
+.user-post form:after{
+  clear: both;
+  content: '';
+  display: table;
 }
 
 .selectedFriend{
@@ -132,7 +159,7 @@
   border: 1px solid gray;
   padding:10px;
   background: #dfe3ee;
-  margin: 20px;
+  margin: 20px 0;
   overflow-y:scroll;
   height: 250px;
 }
