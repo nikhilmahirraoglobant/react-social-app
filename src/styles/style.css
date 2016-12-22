@@ -52,7 +52,8 @@ textarea{
   background-color : #9c9090;
   margin-bottom: 20px;
   text-align: right;
-  border-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
   padding: 5px;
   float: right;
 }
@@ -71,7 +72,8 @@ textarea{
   background-color : #3b5998;
   margin-bottom: 20px;
   color: white;
-  border-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
   padding: 5px;
   float: left;
 }

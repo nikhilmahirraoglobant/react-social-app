@@ -26,6 +26,13 @@ export default class FriendMessages extends Component {
     }
   }
   
+  componentDidUpdate() {
+    var node = document.getElementById('message-list');
+    if(node != null)
+    {
+       node.scrollTop = node.scrollHeight;
+    }
+  }
   
 
   submitMessage = () =>{
@@ -56,7 +63,7 @@ export default class FriendMessages extends Component {
 
           <div className = 'friends-messages-container'>
               <div className = 'selectedFriend'>{this.props.selectedFriend.name}</div>
-              <div className = 'messages-list'>{mappedMessages}</div>
+              <div id = 'message-list' className = 'messages-list'>{mappedMessages}</div>
               <div className = 'send-message-title'>Write to {this.props.selectedFriend.name}</div>
               <textarea id = 'send-message' rows="3" cols="56"></textarea>
               <Button bsStyle="primary send-button" onClick = {this.submitMessage}>Send</Button>
