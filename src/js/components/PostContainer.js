@@ -11,7 +11,7 @@ import FriendsList from './FriendsList'
 
 @connect((store) => {
   return {
-
+   
   };
 })
 

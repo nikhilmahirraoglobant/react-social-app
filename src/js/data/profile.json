@@ -1,5 +1,9 @@
 {
     "id": 1, 
     "name": "Nikhil", 
-    "photo": "images/nikhil.jpg"
+    "lastName": "Mahirrao",
+    "photo": "images/nikhil.jpg",
+    "jobTitle": "Software Engineer",
+    "compnay": "Globant India",
+    "gender": "Male"
 }

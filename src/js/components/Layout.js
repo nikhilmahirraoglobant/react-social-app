@@ -18,18 +18,9 @@ import {fetchProfile} from "../actions/profileActions"
 export default class Layout extends React.Component {
 
   componentDidMount(){
-    this.getProfile();
-    this.getFriendsList();
+     browserHistory.push(`/friends`);
   }
-
-  getProfile = () => {
-    this.props.dispatch(fetchProfile())
-  }
-
-  getFriendsList = () => {
-    browserHistory.push(`/friends`)
-  }
-
+  
   render() {
     return(
       <div>

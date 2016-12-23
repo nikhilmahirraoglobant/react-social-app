@@ -1,8 +1,12 @@
 import React, {Component} from 'react'
 import { connect } from 'react-redux'
+
 import Image from 'react-bootstrap/lib/Image'
 import Button from 'react-bootstrap/lib/Button'
+
 import {submitPost} from "../actions/PostActions"
+import {fetchFriendsList} from "../actions/friendsListActions"
+import {fetchProfile} from "../actions/profileActions"
 
 @connect((store) => {
   return {
@@ -12,6 +16,11 @@ import {submitPost} from "../actions/PostActions"
 })
 
 export default class PostsList extends Component {
+
+  componentWillMount() {
+    this.props.dispatch(fetchFriendsList());
+    this.props.dispatch(fetchProfile());
+  }
 
   submitPost = () => {
     this.props.dispatch(submitPost(document.getElementById('user-post').value))
