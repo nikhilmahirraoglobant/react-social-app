@@ -8,7 +8,7 @@ import {fetchProfile} from "../actions/profileActions"
 
 @connect((store) => {
     return {
-         profile : store.profile.profile 
+         profile : store.profile.profile
     };
 })
 
@@ -20,12 +20,14 @@ export default class Profile extends React.Component {
 
     render() {
         return (
+            this.props.profile ?
             <div>
                 <h3>{this.props.profile.name} {this.props.profile.lastName}</h3>
                 <Image className = 'icon-friends-posts' src={this.props.profile.photo} role="button"/> 
                 <h4>{this.props.profile.jobTitle}</h4>  
                 <h4>{this.props.profile.compnay}</h4>                                   
-            </div>
+            </div> : null
+           
         )
     }
 }

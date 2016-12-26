@@ -39,10 +39,12 @@ export default class SideMenu extends Component {
     return (
           <div>
               
-              {this.props.profile !== null ?  <div className = 'friend-post-icon-container'>
+              {
+                this.props.profile !== null ? 
+                <div className = 'friend-post-icon-container'>
                     <Image onClick = {this.handleProfileSelectAction} className = 'icon-friends-posts' src={this.props.profile.photo} role="button"/>
                     <span className = 'friend-post-icon'>Profile</span>
-                  </div> : null
+                </div> : null
               }              
               
               <div className = 'friend-post-icon-container'>
