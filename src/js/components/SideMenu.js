@@ -14,7 +14,7 @@ import {fetchProfile} from "../actions/profileActions"
   };
 })
 
-export default class SelectFriendsPosts extends Component {
+export default class SideMenu extends Component {
 
   componentWillMount() {
     this.props.dispatch(fetchPostsList());
